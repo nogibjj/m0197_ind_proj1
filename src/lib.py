@@ -20,18 +20,20 @@ def count_genres(genres_list):
 
 
 def describe_selected_columns(df, columns):
-    """Displays descriptive statistics for selected columns in a DataFrame.
+    """Displays descriptive statistics for selected 
+       columns in a DataFrame.
 
     Args:
         df: A Pandas DataFrame.
         columns: A list of column names.
 
     Returns:
-        A Pandas DataFrame containing the descriptive statistics for the selected columns.
+        A Pandas DataFrame containing the descriptive statistics 
+        for the selected columns.
     """
 
     if not all(column in df.columns for column in columns):
-        raise ValueError("Some of the columns do not exist in the DataFrame.")
+        raise ValueError("Some of the columns do not exist.")
 
     descriptive_stats = round(df[columns].describe(), 2)
 
