@@ -2,7 +2,7 @@
 Main cli or app entry point
 """
 
-from src.further_clean_save_json import add
+from further_clean_save_json import add
 import click
 
 # var=1;var=2
