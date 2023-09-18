@@ -4,7 +4,6 @@ A python script with all the common functions used in the project.
 Functions:
 
 """
-import pandas as pd
 
 
 def count_genres(genres_list):
