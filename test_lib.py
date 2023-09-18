@@ -1,5 +1,5 @@
 """
-Test goes here
+testing functions in lib.py
 
 """
 
