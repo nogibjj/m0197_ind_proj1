@@ -2,7 +2,9 @@
 Use the lib.py functions to clean the data and save it to a new file.
 
 """
-from utils.lib import count_genres, convert_duration_ms_to_duration_m
+
+from lib import (count_genres, 
+                 convert_duration_ms_to_duration_m)
 
 import pandas as pd
 

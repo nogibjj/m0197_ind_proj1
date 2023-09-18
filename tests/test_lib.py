@@ -2,8 +2,10 @@
 testing functions in lib.py
 
 """
+import sys
+sys.path.append('src')
 
-from utils.lib import (
+from src.lib import (
     count_genres,
     describe_selected_columns,
     convert_duration_ms_to_duration_m,

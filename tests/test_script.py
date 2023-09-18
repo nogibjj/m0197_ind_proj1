@@ -2,8 +2,10 @@
 testing functions in further_clean_save_json.py script
 
 """
+import sys
+sys.path.append('src')
 
-from further_clean_save_json import save_json
+from src.further_clean_save_json import save_json
 
 import unittest
 import pandas as pd

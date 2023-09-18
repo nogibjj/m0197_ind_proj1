@@ -3,7 +3,8 @@ install:
 		pip install -r requirements.txt
 
 test:
-	python -m pytest -vv --cov=main --cov=src test_*.py
+	#python -m pytest -vv --cov=main --cov=tests test_*.py
+	python -m pytest -vv --cov=main --cov=tests tests/*.py
 	python -m pytest --nbval $(src/*.ipynb)
 
 format:	
