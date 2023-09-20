@@ -26,3 +26,5 @@ jobs:
         id: test
         run: |
           make test  
+      - name: Copy Test Output to Reports
+        run: cp test-output.md reports/test_output.md
