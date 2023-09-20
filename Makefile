@@ -20,5 +20,8 @@ container-lint:
 	docker run --rm -i hadolint/hadolint < Dockerfile
 
 refactor: format lint
+
+run:
+	python3 src/further_clean_save_json.py
 		
-all: install lint test format
+all: install lint test format run

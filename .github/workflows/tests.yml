@@ -25,6 +25,7 @@ jobs:
       - name: Run Tests
         id: test
         run: |
-          make test > test-output.md   
-      - name: Copy Test Output to Reports
-        run: cp test-output.md reports/test_output.md
+          make test
+      #    make test >> reports/test-output.md
+      # - name: Copy Test Output to Reports
+      #   run: mkdir -p reports/Run\ Tests && cp reports/test-output.md reports/Run\ Tests/

@@ -4,7 +4,8 @@ Use the lib.py functions to clean the data and save it to a new file.
 """
 
 from lib import (count_genres, 
-                 convert_duration_ms_to_duration_m)
+                 convert_duration_ms_to_duration_m, 
+                 describe_selected_columns)
 
 import pandas as pd
 
@@ -35,4 +36,10 @@ def save_json(df, filename):
     df.to_json(f"datasets/{filename}.json", orient="records")
 
 
-save_json(data, "playlist_2010to2022_clean")
+if __name__ == "__main__":
+    save_json(data, "playlist_2010to2022_clean")
+    selected_columns=['artist_genres', 'track_popularity', 'duration_m']
+    descriptive_stats = describe_selected_columns(data, selected_columns)
+    with open("reports/stats.md", "w") as f:
+        f.write("\n")
+        f.writelines(descriptive_stats.to_markdown())
