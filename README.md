@@ -28,11 +28,15 @@ This repo demonstrates the power github actions for automating your CICD workflo
 1. `devcontainer.json` Sets up a development environment. It also includes settings for Docker for VS Code or GitHub Codespace. 
 2. `Dockerfile` Dockerfile set up a development environment with Python 3.8
 
-
 `Makefile` Streamlines development workflows and ensuring code quality and consistency. Example Usuage is illustrated in 
 [this Gist](https://gist.github.com/markoke/1b98b6254c1aadbc6e7e7c9421c36846).
 
 #### Plots insights 
 ![plot](plots/track_popularity_vs_duration.png)
+
+## DEMO VIDEO
+
+You can watch the demo video [here](https://www.youtube.com/watch?v=6vxBJy8y8Ms).
+
 
 
